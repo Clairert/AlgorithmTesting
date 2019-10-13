@@ -1,0 +1,21 @@
+
+Original word: hi    pred1  hi
+Original word: claire    pred1  claire    pred2  claire
+Original word: dogs    pred1  dogs
+Original word: frogs    pred1  frogs
+Original word: yllow
+Original word: hillo
+Original word: flog    pred1  flog
+Original word: mog
+Original word: random    pred1  random    pred2  random
+Original word: ymbrella
+Original word: car    pred1  car    pred2  car
+Original word: tre    pred1  tre
+Original word: flowrs
+Original word: flowe
+Original word: fl
+Original word: ch
+Original word: cha    pred1  cha
+Original word: chai    pred1  chai
+Original word: char    pred1  char
+Time Taken: 11690
