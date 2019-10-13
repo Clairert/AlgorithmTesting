@@ -44,6 +44,7 @@ namespace AlgTester
                 }
 
             }
+            
             Console.WriteLine("test words Loaded");
         }
 
@@ -61,7 +62,7 @@ namespace AlgTester
                 for (int i = 0; i < dictWords.Count; i++)
                 {
                     int distance = GetDamerauLevenshteinDistance(enteredWord, dictWords[i].Word);
-                    if (distance < 1)
+                    if (distance < 4)
                     {
                         dictWords[i].CurrentDistance = distance / (1 / dictWords[i].Frequency);
                         results.Add(dictWords[i]);
@@ -70,11 +71,12 @@ namespace AlgTester
                 int optionCount = 4;
                 //IntArrayInsertionSort(results);
 
-                if (results.Count > 1)
-                {
-                    QuickSort_Recursive(results, 0, results.Count - 1);
-                }
-                
+                //if (results.Count > 1)
+                //{
+                //    QuickSort_Recursive(results, 0, results.Count - 1);
+                //}
+
+                results.Sort();
                 if (results.Count < 4)
                 {
                     optionCount = results.Count;
@@ -108,7 +110,7 @@ namespace AlgTester
                 for (int i = 0; i < dictWords.Count; i++)
                 {
                     int distance = GetDamerauLevenshteinDistance(enteredWord, dictWords[i].Word);
-                    if (distance < 1)
+                    if (distance < 4)
                     {
                         dictWords[i].CurrentDistance = distance / (1 / dictWords[i].Frequency);
                         results.Add(dictWords[i]);
@@ -119,7 +121,6 @@ namespace AlgTester
 
 
                 IntArrayInsertionSort(results);
-                
 
                 if (results.Count < 4)
                 {

@@ -1,21 +1,20 @@
-
-Original word: hi    pred1  hi
-Original word: claire    pred1  claire    pred2  claire
-Original word: dogs    pred1  dogs
-Original word: frogs    pred1  frogs
-Original word: yllow
-Original word: hillo
-Original word: flog    pred1  flog
-Original word: mog
-Original word: random    pred1  random    pred2  random
-Original word: ymbrella
-Original word: car    pred1  car    pred2  car
-Original word: tre    pred1  tre
-Original word: flowrs
-Original word: flowe
-Original word: fl
-Original word: ch
-Original word: cha    pred1  cha
-Original word: chai    pred1  chai
-Original word: char    pred1  char
-Time Taken: 11690
+Original word: hi    pred1  hi    pred2  hoi    pred3  wip    pred4  bgi
+Original word: claire    pred1  claire    pred2  claire    pred3  clary    pred4  hilaire
+Original word: dogs    pred1  dogs    pred2  dois    pred3  fogs    pred4  doss
+Original word: frogs    pred1  frogs    pred2  fogs    pred3  frogh    pred4  argos
+Original word: yllow    pred1  tallow    pred2  ellroy    pred3  malos    pred4  albot
+Original word: hillo    pred1  hielo    pred2  filho    pred3  kollo    pred4  shilo
+Original word: flog    pred1  flog    pred2  flos    pred3  floe    pred4  vlog
+Original word: mog    pred1  mok    pred2  mol    pred3  vog    pred4  mor
+Original word: random    pred1  random    pred2  random    pred3  radom    pred4  rango
+Original word: ymbrella    pred1  marella    pred2  mirella    pred3  corella    pred4  gambrell
+Original word: car    pred1  car    pred2  car    pred3  caa    pred4  cyr
+Original word: tre    pred1  tre    pred2  atre    pred3  ture    pred4  rte
+Original word: flowrs    pred1  flos    pred2  flours    pred3  flowy    pred4  floes
+Original word: flowe    pred1  flowy    pred2  floe    pred3  loew    pred4  sloe
+Original word: fl    pred1  blm    pred2  cel    pred3  fux    pred4  fae
+Original word: ch    pred1  sch    pred2  mch    pred3  cidh    pred4  ath
+Original word: cha    pred1  cha    pred2  caa    pred3  cwa    pred4  cma
+Original word: chai    pred1  chai    pred2  chani    pred3  chari    pred4  chak
+Original word: char    pred1  char    pred2  chara    pred3  chari    pred4  charl
+Time Taken: 7869

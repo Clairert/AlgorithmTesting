@@ -1,3 +1,20 @@
-Original word: hi    pred1  hi     Time Taken:  484
-Original word: hi    pred1  hi
-Original word: hi    pred1  hi
+Original word: hi    pred1  hi    pred2  hoi    pred3  bgi    pred4  chid
+Original word: claire    pred1  claire    pred2  claire    pred3  calfire    pred4  �clair
+Original word: dogs    pred1  dogs    pred2  dois    pred3  fogs    pred4  doge
+Original word: frogs    pred1  frogs    pred2  fogs    pred3  frogh    pred4  argos
+Original word: yllow    pred1  tallow    pred2  albot    pred3  aleo    pred4  bellov
+Original word: hillo    pred1  billon    pred2  filho    pred3  hielo    pred4  holl
+Original word: flog    pred1  flog    pred2  flos    pred3  floe    pred4  vlog
+Original word: mog    pred1  mok    pred2  mol    pred3  vog    pred4  mor
+Original word: random    pred1  random    pred2  random    pred3  radom    pred4  bandol
+Original word: ymbrella    pred1  marella    pred2  mirella    pred3  amarilla    pred4  corella
+Original word: car    pred1  car    pred2  car    pred3  caa    pred4  cur
+Original word: tre    pred1  tre    pred2  atre    pred3  rte    pred4  ture
+Original word: flowrs    pred1  flos    pred2  flours    pred3  flowy    pred4  floes
+Original word: flowe    pred1  floe    pred2  flowy    pred3  flos    pred4  flue
+Original word: fl    pred1  bla    pred2  blm    pred3  btl    pred4  cel
+Original word: ch    pred1  sch    pred2  mch    pred3  acs    pred4  ath
+Original word: cha    pred1  cha    pred2  caa    pred3  cwa    pred4  chak
+Original word: chai    pred1  chai    pred2  chani    pred3  chari    pred4  chak
+Original word: char    pred1  char    pred2  chara    pred3  chari    pred4  charl
+Time Taken: 3234
