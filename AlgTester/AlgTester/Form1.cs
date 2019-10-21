@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
@@ -17,11 +18,15 @@ namespace AlgTester
         String enteredWord;
         List<AutoWord> dictWords;
         List<String> testWords;
+        //private TernaryTree treeTrial;
+        AutoCompleteTree trialTree;
         public Form1()
         {
             InitializeComponent();
             enteredWord = "";
             dictWords = new List<AutoWord>();
+            //treeTrial = new TernaryTree();
+            trialTree = new AutoCompleteTree();
             using (StreamReader sr = new StreamReader("fullDictionary.txt"))
             //using (StreamReader sr = new StreamReader("tempDict.csv"))
             {
@@ -41,6 +46,8 @@ namespace AlgTester
                 while ((line = sr.ReadLine()) != null)
                 {
                     testWords.Add(line);
+                    trialTree.Add(line);
+                    //treeTrial.Add(line);
                 }
 
             }
@@ -177,7 +184,39 @@ namespace AlgTester
         }
 
 
+        private void button3_Click(object sender, EventArgs e)
+        {
 
+
+            
+            Console.WriteLine(trialTree.m_root.children.Count);
+            File.AppendAllText("treeTest.txt", trialTree.Contains("claire") + Environment.NewLine);
+            File.AppendAllText("treeTest.txt", trialTree.Contains("dogs") + Environment.NewLine);
+            File.AppendAllText("treeTest.txt", trialTree.Contains("char") + Environment.NewLine);
+            File.AppendAllText("treeTest.txt", trialTree.Contains("ymbrella") + Environment.NewLine);
+            File.AppendAllText("treeTest.txt", trialTree.Contains("clair") + Environment.NewLine);
+            File.AppendAllText("treeTest.txt", trialTree.Contains("doge") + Environment.NewLine);
+            File.AppendAllText("treeTest.txt", trialTree.Contains("chara") + Environment.NewLine);
+            File.AppendAllText("treeTest.txt", trialTree.Contains("umbrella") + Environment.NewLine);
+
+
+            //File.AppendAllText("treeTest.txt", treeTrial.Contains("claire") + Environment.NewLine);
+            //File.AppendAllText("treeTest.txt", treeTrial.Contains("dogs") + Environment.NewLine);
+            //File.AppendAllText("treeTest.txt", treeTrial.Contains("char") + Environment.NewLine);
+            //File.AppendAllText("treeTest.txt", treeTrial.Contains("ymbrella") + Environment.NewLine);
+            //File.AppendAllText("treeTest.txt", treeTrial.Contains("clair") + Environment.NewLine);
+            //File.AppendAllText("treeTest.txt", treeTrial.Contains("doge") + Environment.NewLine);
+            //File.AppendAllText("treeTest.txt", treeTrial.Contains("chara") + Environment.NewLine);
+            //File.AppendAllText("treeTest.txt", treeTrial.Contains("umbrella") + Environment.NewLine);
+            //ArrayList sugs = new ArrayList();
+            // //= treeTrial.AutoComplete("cla");
+            ////foreach(string st in sugs)
+            ////{
+            ////        File.AppendAllText("treeTest.txt", st + Environment.NewLine);
+            ////}
+            //Console.WriteLine(sugs.Count);
+            Console.WriteLine("TreeTest finished");
+        }
 
 
 
