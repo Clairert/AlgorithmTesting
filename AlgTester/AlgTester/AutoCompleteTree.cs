@@ -8,7 +8,7 @@ namespace AlgTester
 {
     class AutoCompleteTree
     {
-        public Node m_root = null;
+        public Node m_root;
 
         public AutoCompleteTree()
         {
@@ -83,20 +83,42 @@ namespace AlgTester
 
 
 
-        public List<String> suggestions(String word)
+        public String[] suggestions(String word)
         {
             int pos = 0;
             Node enteredEnd = m_root;
             for (int i = 0; i < word.Length; i++)
             {
-                enteredEnd = enteredEnd.findNode(word[i], true);
+                enteredEnd = enteredEnd.findNode(word[i], false);
             }
-
-
-            return sfdsfdsf;
+            List<String> suggestions = travelNode(enteredEnd, new List<string>());
+            string suggest = string.Join("", suggestions);
+            String[] sg = suggest.Split('*');
+            for (int i = 0; i < sg.Length; i++)
+            {
+                sg[i] = word + sg[i];
+            }
+            
+            return sg;
 
         }
 
-
+        private List<String> travelNode(Node startNode, List<String> suggestions)
+        {
+            if (!startNode.m_wordEnd)
+            {
+                foreach (Node node in startNode.children)
+                {
+                    suggestions.Add(Char.ToString(node.m_char));
+                    travelNode(node,suggestions);
+                }
+            }
+            else
+            {
+                suggestions.Add("*");
+                return suggestions;
+            }
+            return suggestions;
+        }
     }
 }

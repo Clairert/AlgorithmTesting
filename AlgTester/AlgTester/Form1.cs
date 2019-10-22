@@ -35,6 +35,7 @@ namespace AlgTester
                 {
                     string[] seperateKeys = line.Split(',');
                     dictWords.Add(new AutoWord(seperateKeys[0], seperateKeys[1]));
+                    trialTree.Add(seperateKeys[0]);
                 }
 
             }
@@ -46,7 +47,7 @@ namespace AlgTester
                 while ((line = sr.ReadLine()) != null)
                 {
                     testWords.Add(line);
-                    trialTree.Add(line);
+                    
                     //treeTrial.Add(line);
                 }
 
@@ -189,17 +190,15 @@ namespace AlgTester
 
 
             
-            Console.WriteLine(trialTree.m_root.children.Count);
-            File.AppendAllText("treeTest.txt", trialTree.Contains("claire") + Environment.NewLine);
-            File.AppendAllText("treeTest.txt", trialTree.Contains("dogs") + Environment.NewLine);
-            File.AppendAllText("treeTest.txt", trialTree.Contains("char") + Environment.NewLine);
-            File.AppendAllText("treeTest.txt", trialTree.Contains("ymbrella") + Environment.NewLine);
-            File.AppendAllText("treeTest.txt", trialTree.Contains("clair") + Environment.NewLine);
-            File.AppendAllText("treeTest.txt", trialTree.Contains("doge") + Environment.NewLine);
-            File.AppendAllText("treeTest.txt", trialTree.Contains("chara") + Environment.NewLine);
-            File.AppendAllText("treeTest.txt", trialTree.Contains("umbrella") + Environment.NewLine);
-
-
+            //Console.WriteLine(trialTree.m_root.children.Count);
+            //File.AppendAllText("treeTest.txt", trialTree.Contains("claire") + Environment.NewLine);
+            //File.AppendAllText("treeTest.txt", trialTree.suggestions("cl") + Environment.NewLine);
+            String[] suggestions;
+            suggestions = trialTree.suggestions("cla");
+            foreach (string st in suggestions)
+            {
+                File.AppendAllText("treeTest.txt", st + Environment.NewLine);
+            }
             //File.AppendAllText("treeTest.txt", treeTrial.Contains("claire") + Environment.NewLine);
             //File.AppendAllText("treeTest.txt", treeTrial.Contains("dogs") + Environment.NewLine);
             //File.AppendAllText("treeTest.txt", treeTrial.Contains("char") + Environment.NewLine);
